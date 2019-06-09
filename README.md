@@ -1,5 +1,5 @@
 ### Date created
-07-June-2019
+09-June-2019
 
 ### Project Title
 BikeShareFernando
@@ -11,4 +11,6 @@ My project is about a bike share system working in three different cities, Chica
 Bike.py, washington.csv, new_york_city.csv, chicago.csv, readme.md
 
 ### Credits
-Udacity+google+https://stackoverflow.com/
+Udacity
+https://stackoverflow.com/
+
