@@ -21,7 +21,7 @@ def get_filters():
         # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
         city = input(
-            "Welcome to the US Bike Share Mariobros! \n Which city would you like to explore, Washington, New York City or Chicago?\n").lower()
+            "Welcome to the US BikeShareFernando! \n Which city would you like to explore, Washington, New York City or Chicago?\n").lower()
         if city not in ['chicago', 'new york city', 'washington']:
             print("Sorry, I do not understand your input. Please input either chicago, new york city, or Washington.")
             continue
@@ -80,9 +80,8 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
+    print("Thank you for using BikeShareFernando")
     # display the most common month
-    print(df["Start Time"].dt.month.value_counts())
-    print(df["Start Time"].dt.month.value_counts().idxmax())
     print("You have selected the month: ")
     print(MONTHS_LIST[
         df["Start Time"].dt.month.value_counts().idxmax()-1
@@ -91,7 +90,7 @@ def time_stats(df):
     # display the most common day of week
     print("You have selected the day: ")
     print(df["Start Time"].dt.day_name().value_counts().idxmax())
-    print("How many times: " + str(df["Start Time"].dt.day_name().value_counts().max()))
+    print("How many times BikeShareFernando was used selected date: " + str(df["Start Time"].dt.day_name().value_counts().max()))
 
 
     # display the most common start hour
